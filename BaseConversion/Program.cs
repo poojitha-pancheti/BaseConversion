@@ -8,7 +8,6 @@ namespace BaseConversion
         {
             if (n == 0)
                 return;
-
             ToBinary(n / 2);
             Console.WriteLine(n % 2);
         }
@@ -17,7 +16,7 @@ namespace BaseConversion
             if (n == 0)
                 return;
             ConvertBase(n / b, b);
-            int remainder = n % 10;
+            int remainder = n % b;
             if (remainder < 10)
                 Console.Write(remainder);
             else
